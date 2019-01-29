@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-5">
+                <div class="header">
+                    <h1>Bahşiş Hesaplama</h1>
+                </div>
+                <div class="body">
+                    <form id="tipCalculatorForm">
+                        <div class="form-group">
+                            <label for="bill">Ödemeniz ne kadar?</label>
+                            <input type="text" class="form-control" id="bill" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceScore">Servisten memnun kaldınız mı?</label>
+                            <select class="form-control" id="serviceScore">
+                            <option value="0">Bir değer seçin ...</option>
+                            <option value="30">Çok memnun kaldım - 30% bahşiş</option>
+                            <option value="15">Normal - 15% bahşiş</option>
+                            <option value="10">Daha iyi olabirdi - 10% bahşiş</option>
+                            <option value="5">Hiç memnun kalmadım - 5% bahşiş</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tip">Ödemeniz kaç kişi ile paylaşılsın?</label>
+                            <input type="text" class="form-control" id="tip" placeholder="">
+                        </div>
+                        <div class="buttons">
+                            <button type="submit" class="btn" id="calculator">Hesapla</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="result">
+                    Kişi başı bahşiş miktarı<br>                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
